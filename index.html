@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/juery/3.2.1/jquery.min.js"></script>
 		<title>Giphy Project</title>
 
 	</head>
 	<body>
 		 <h1>Giphy Project</h1>
-		 
+		 <div class="container">
+			 	<form>
+					 <div class="form-grup">
+						 <label for="">Search for giphys</label>
+						 <input type="text" class="form-control" id="input" placeholder="Search">
+					 </div>
+					 <button type="enter" class="btn-primary"></button>
+				 </form>
+				 <br>
+				 <div class="results">
+					 <div class="panel panel-defoult">
+						 <div class="panel-body">
+							 
+						 </div>
+					 </div>
+				 </div>
+				
+				 <div class="results"></div>
+		 </div>
+
 	</body>
 
 
 </html> 
+
+// creat vars //
+
+	var input
+	var submit
+	var apikey 
+
+	// get the value when the person presses enter //
+
+	$submit.on('click',function (event)) event.preventDefault();
+	var inputVal = $input.val(),
+
+	// make a request to the giphy site with the values entered //
+
+	function getGiphys(inputVal)
+	$get()
